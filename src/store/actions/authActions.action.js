@@ -15,7 +15,8 @@ const setUserDetails = (userDetails)=>{
 export const getActions = (dispatch) =>{
     return {
         login: (userDetails, history)=> dispatch(login(userDetails, history)),
-        register: (userDetails, history)=> dispatch(register(userDetails, history))
+        register: (userDetails, history)=> dispatch(register(userDetails, history)),
+        setUserDetails:(userDetails) => dispatch(setUserDetails(userDetails))
     }
 }
 
